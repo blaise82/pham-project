@@ -1,0 +1,255 @@
+.media {
+	float: left;
+}
+.buttons {
+	float: right;
+}
+.App-header {
+	height: auto;
+	width: 100%;
+	padding: 10px;
+}
+.wrap {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	left: auto;
+}
+.wrap1 {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	left: auto;
+}
+.icon {
+	margin-right: 10px;
+}
+.button1 {
+	height: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+	background: #349beb;
+	border: none;
+	border: 1px solid #349beb;
+	cursor: pointer;
+	margin-right: 5px;
+	text-transform: uppercase;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.75);
+}
+.button2 {
+	height: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+	background: #eb6b34;
+	border: none;
+	border-radius: 20px;
+	border: 1px solid #eb6b34;
+	cursor: pointer;
+	margin-right: 5px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+	float: left;
+	padding: 20px 0;
+}
+.title {
+	color: #349beb;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+.total {
+	width: 30%;
+	margin-top: 10px;
+	float: right;
+}
+.total table {
+	color: #595959;
+	font-weight: bold;
+}
+.final {
+	color: #eb6b34;
+}
+.total table {
+	border: none;
+}
+.total table tr td {
+	border: none;
+}
+
+.sectionBg {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.section {
+	margin-top: 20px;
+}
+nav {
+	border-top: 1px solid #dddddd;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 20px;
+}
+nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	margin-right: 30px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #202020;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+	overflow: hidden;
+}
+table td,
+table th {
+	border-top: 1px solid #ecf0f1;
+	padding: 10px;
+}
+table td {
+	border-left: 1px solid #ecf0f1;
+	border-right: 1px solid #ecf0f1;
+}
+table th {
+	background-color: #dddddd;
+	color: #595959;
+}
+table tr:nth-of-type(even) td {
+	/* background-color: #d9f4f2; */
+}
+table .total th {
+	background-color: white;
+}
+table .total td {
+	text-align: right;
+	font-weight: 700;
+}
+
+.mobile-header {
+	display: none;
+}
+
+@media only screen and (max-width: 760px) {
+	/* p {
+		display: block;
+		font-weight: bold;
+	} */
+
+	table tr td:not(:first-child),
+	table tr th:not(:first-child),
+	table tr td:not(.total-val) {
+		display: none;
+	}
+	table tr:nth-of-type(even) td:first-child {
+		/* background-color: ; */
+	}
+	table tr:nth-of-type(odd) td:first-child {
+		background-color: white;
+	}
+	table tr:nth-of-type(even) td:not(:first-child) {
+		background-color: white;
+	}
+	table tr th:first-child {
+		width: 100%;
+		display: block;
+	}
+	table tr th:not(:first-child) {
+		width: 40%;
+		transition: transform 0.4s ease-out;
+		transform: translateY(-9999px);
+		position: relative;
+		z-index: -1;
+	}
+	table tr td:not(:first-child) {
+		transition: transform 0.4s ease-out;
+		transform: translateY(-9999px);
+		width: 60%;
+		position: relative;
+		z-index: -1;
+	}
+	table tr td:first-child {
+		display: block;
+		cursor: pointer;
+	}
+	table tr.total th {
+		width: 25%;
+		display: inline-block;
+	}
+	table tr td.total-val {
+		display: inline-block;
+		transform: translateY(0);
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 300px) {
+	table tr th:not(:first-child) {
+		width: 50%;
+		font-size: 14px;
+	}
+	table tr td:not(:first-child) {
+		width: 50%;
+		font-size: 14px;
+	}
+}
+
+.choice {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.footer {
+	border-top: 1px solid #dddddd;
+	float: left;
+	width: 100%;
+	height: 70px;
+}
+.right {
+	padding: 20px;
+	float: right;
+}
+.list ul {
+	width: 100%;
+	flex-grow: 4;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	/* background-color: #f1f1f1; */
+}
+.container {
+	width: 100%;
+	flex-grow: 4;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+.list ul li {
+	float: left;
+}
